@@ -22,11 +22,33 @@ function SetTextElementValueById(elementId, newValue){
 
 document.getElementById('Triangle_Calculate_Button').addEventListener
 ('click',function()
+
 {
     const baseValue = getInputValueByID('bValue');
     const hightValue = getInputValueByID('hValue');
-    const TriangleArea= hightValue * baseValue;
+    const TriangleArea= hightValue*baseValue;
     const TriangleAreaValue = TriangleArea.value;
 
 
-})
+    SetTextElementValueById('Calculate_Values1',TriangleAreaValue);
+
+
+}
+)
+
+// =================================================================
+
+document.getElementById('Parallelogram_Calculate_Button').addEventListener
+('click',function()
+
+{
+
+const ParallelogramCalculation = 10*12;
+const ParallelogramCalculateValue = ParallelogramCalculate;
+
+SetTextElementValueById('Calculate_Values3',ParallelogramCalculateValue);
+
+
+}
+
+)

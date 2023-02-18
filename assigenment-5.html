@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assigenment-5.css">
     <title>assignment-5</title>
 </head>
 <body>
@@ -58,6 +59,7 @@
 
 
             <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl ">
+
                 <img class="mt-12" src="images/parallelogram.png" alt="">
 
                 <h3 class="text-3xl text-center mt-5"> Parallelogram</h3>
@@ -67,19 +69,25 @@
                 <!-- <input  type="text" placeholder=" b=10cm"> cm
                 <input class="mt-2" type="text" placeholder=" h=12cm"> cm  -->
 
-                <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
+                <button id="Parallelogram_Calculate_Button"  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
 
             </div>
 
 
 
-            <div class="bg-slate-50 w-60  p-3 rounded-md drop-shadow-xl ">
+            <div class="bg-slate-50 w-60 p-3 rounded-md drop-shadow-xl inline-block">
                 
 
                 <h3 class="text-1xl text-center mt-5 "> <u>Area Calculation</u> </h3>
 
-                <section>
+                <section >
 
+                            1.Triangle:<p id="Calculate_Values1"> <button  class="text-white bg-slate-500 rounded-lg p-2 py-1 px-2 hover:bg-sky-700 mt-5 text-sm">Convert to m<sup>2</sup> </button></p>
+                            2.Ellipse:<p id="Calculate_Values2"></p>
+                            3.Parallelogram:<p id="Calculate_Values3"></p>
+                            4.Rectangle:<p id="Calculate_Values4"></p>
+                            5.Rhombus:<p id="Calculate_Values4"></p>
+                            6.Pentagon:<p id="Calculate_Values4"></p>
 
                 </section>
                 
@@ -89,7 +97,8 @@
         </div>
 
                     <!-- =============== -->
-                    <div class="grid grid-cols-4 gap-4  ml-20 mt-12">
+
+                    <div  class="grid grid-cols-4 gap-4  ml-20 mt-12">
 
 
                         <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl ">
