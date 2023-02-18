@@ -111,3 +111,12 @@ SetTextElementValueById('Calculate_Values2',EllipseCalculateValue);
 }
 
 )
+
+
+// function display_alert()
+//  {
+//  alert("Type The Values");
+//  }
+
+
+
