@@ -25,11 +25,11 @@
        
     <section>
 
-        <div class="grid grid-cols-4 gap-4  ml-20 mt-12">
+        <div class="grid grid-cols-4 gap-4  ml-20 mt-12 ">
 
 
 
-            <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl ">
+            <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                 <img src="images/triangle.png" alt="">
 
                 <h3 class="text-3xl text-center mt-5"> Triangle</h3>
@@ -44,15 +44,15 @@
 
 
 
-            <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl ">
+            <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl  ">
                 <img class="mt-9" src="images/rectangle.png" alt="">
 
                 <h3 class="text-3xl text-center mt-5"> Rectangle</h3>
                 <h3  class="text-1xl text-center mb-4"> Area (A) = w*I</h3>
 
-                <input  type="text" placeholder=" w"> cm
-                <input class="mt-2" type="text" placeholder=" l"> cm 
-                <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
+                <input id="wvalue" type="text" placeholder=" w"> cm
+                <input id="lvalue" class="mt-2" type="text" placeholder=" l"> cm 
+                <button id="Rectangle_Calculate_Button" class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
 
             </div>
 
@@ -75,19 +75,25 @@
 
 
 
-            <div class="bg-slate-50 w-60 p-3 rounded-md drop-shadow-xl inline-block">
+            <div class="bg-slate-50 w-80 p-3 rounded-md drop-shadow-xl inline-block">
                 
 
                 <h3 class="text-1xl text-center mt-5 "> <u>Area Calculation</u> </h3>
 
                 <section >
 
-                            1.Triangle:<p id="Calculate_Values1"> <button  class="text-white bg-slate-500 rounded-lg p-2 py-1 px-2 hover:bg-sky-700 mt-5 text-sm">Convert to m<sup>2</sup> </button></p>
-                            2.Ellipse:<p id="Calculate_Values2"></p>
-                            3.Parallelogram:<p id="Calculate_Values3"></p>
-                            4.Rectangle:<p id="Calculate_Values4"></p>
-                            5.Rhombus:<p id="Calculate_Values4"></p>
-                            6.Pentagon:<p id="Calculate_Values4"></p>
+                           1.Triangle:
+
+                            <b id="Calculate_Values1" > </b> <button   class="text-white bg-slate-500 rounded-lg p-2 py-1 px-2 hover:bg-sky-700 mt-5 text-sm">Convert to  m<sup>2</sup> </button>
+
+                            <br>
+                            2.Rectangle:<b id="Calculate_Values4"></b> </b> <button   class="text-white bg-slate-500 rounded-lg p-2 py-1 px-2 hover:bg-sky-700 mt-5 text-sm">Convert to  m<sup>2</sup> </button><br>
+                           
+                            3.Parallelogram:<b id="Calculate_Values3"></b> </b> <button   class="text-white bg-slate-500 rounded-lg p-2 py-1 px-2 hover:bg-sky-700 mt-5 text-sm">Convert to  m<sup>2</sup> </button><br>
+                            
+                            4.Rhombus:<b id="Calculate_Values5"></b> </b> <button   class="text-white bg-slate-500 rounded-lg p-2 py-1 px-2 hover:bg-sky-700 mt-5 text-sm">Convert to  m<sup>2</sup> </button><br>
+                            5.Pentagon:<b id="Calculate_Values6"></b></b> <button   class="text-white bg-slate-500 rounded-lg p-2 py-1 px-2 hover:bg-sky-700 mt-5 text-sm">Convert to  m<sup>2</sup> </button><br>
+                            6.Ellipse:<b id="Calculate_Values2"></b> </b> <button   class="text-white bg-slate-500 rounded-lg p-2 py-1 px-2 hover:bg-sky-700 mt-5 text-sm">Convert to  m<sup>2</sup> </button><br>
 
                 </section>
                 
@@ -112,7 +118,7 @@
                             <!-- <input  type="text" placeholder=" b "> cm
                             <input class="mt-2" type="text" placeholder=" h"> cm  -->
 
-                            <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
+                            <button id="Rhombus_Calculate_Button" class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
             
                         </div>
             
@@ -127,7 +133,7 @@
                             <input class="mt-2" type="text" placeholder=" l"> cm  -->
 
 
-                            <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
+                            <button id="Pentagon_Calculate_Button"  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
             
                         </div>
             
@@ -143,7 +149,7 @@
                             <input class="mt-2" type="text" placeholder=" h=12cm"> cm  -->
 
 
-                            <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
+                            <button id="Ellipse_Calculate_Button"  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
             
                         </div>
             
