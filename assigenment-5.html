@@ -27,17 +27,21 @@
         <div class="grid grid-cols-4 gap-4  ml-20 mt-12">
 
 
+
             <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl ">
                 <img src="images/triangle.png" alt="">
 
                 <h3 class="text-3xl text-center mt-5"> Triangle</h3>
                 <h3  class="text-1xl text-center mb-4"> Area (A) = 0.5*b*h</h3>
 
-                <input  type="text" placeholder=" b"> cm
-                <input class="mt-2" type="text" placeholder=" h"> cm 
-                <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
+                <input id="bValue"  type="text" placeholder=" b"> cm
+                <input id="hValue" class="mt-2" type="text" placeholder=" h"> cm 
+
+                <button id="Triangle_Calculate_Button"  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
 
             </div>
+
+
 
             <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl ">
                 <img class="mt-9" src="images/rectangle.png" alt="">
@@ -51,22 +55,33 @@
 
             </div>
 
+
+
             <div class="bg-zinc-200 w-60  p-3 rounded-md drop-shadow-xl ">
                 <img class="mt-12" src="images/parallelogram.png" alt="">
 
                 <h3 class="text-3xl text-center mt-5"> Parallelogram</h3>
                 <h3  class="text-1xl text-center mb-4"> Area (A) = b*h</h3>
+                <p class="text-center"> b=10 cm  h=12 cm</p>
 
-                <input  type="text" placeholder=" b=10cm"> cm
-                <input class="mt-2" type="text" placeholder=" h=12cm"> cm 
+                <!-- <input  type="text" placeholder=" b=10cm"> cm
+                <input class="mt-2" type="text" placeholder=" h=12cm"> cm  -->
+
                 <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
 
             </div>
+
+
 
             <div class="bg-slate-50 w-60  p-3 rounded-md drop-shadow-xl ">
                 
 
                 <h3 class="text-1xl text-center mt-5 "> <u>Area Calculation</u> </h3>
+
+                <section>
+
+
+                </section>
                 
 
             </div>
@@ -83,8 +98,11 @@
                             <h3 class="text-3xl text-center mt-5"> Rhombus</h3>
                             <h3  class="text-1xl text-center mb-4"> Area (A) = d1*d*0.5 </h3>
             
-                            <input  type="text" placeholder=" b "> cm
-                            <input class="mt-2" type="text" placeholder=" h"> cm 
+                            <p class="text-center">d<sub>1</sub>= 16cm d<sub></sub>= 8cm</p> 
+
+                            <!-- <input  type="text" placeholder=" b "> cm
+                            <input class="mt-2" type="text" placeholder=" h"> cm  -->
+
                             <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
             
                         </div>
@@ -95,8 +113,11 @@
                             <h3 class="text-3xl text-center mt-5"> Pentagon</h3>
                             <h3  class="text-1xl text-center mb-4"> Area (A) = 0.5*p*b</h3>
             
-                            <input  type="text" placeholder=" w"> cm
-                            <input class="mt-2" type="text" placeholder=" l"> cm 
+                            <p class="text-center">p = 6cm, b= 10cm</p>
+                            <!-- <input  type="text" placeholder=" w"> cm
+                            <input class="mt-2" type="text" placeholder=" l"> cm  -->
+
+
                             <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
             
                         </div>
@@ -108,8 +129,11 @@
                             <h3 class="text-3xl text-center mt-12"> Ellipse</h3>
                             <h3  class="text-1xl text-center mb-4"> Area (A) = Π*a*b</h3>
             
-                            <input  type="text" placeholder=" b=10cm"> cm
-                            <input class="mt-2" type="text" placeholder=" h=12cm"> cm 
+                            <p class="text-center">a= 10cm, b= 4c</p>
+                            <!-- <input  type="text" placeholder=" b=10cm"> cm
+                            <input class="mt-2" type="text" placeholder=" h=12cm"> cm  -->
+
+
                             <button  class="w-100 text-white bg-slate-500 rounded-lg ml-10  py-1 px-8 hover:bg-sky-700 mt-5"> Calculate </button>
             
                         </div>
@@ -121,25 +145,6 @@
        
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </main>
     <script src="assigenment-5.js"></script>
