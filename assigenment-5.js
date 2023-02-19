@@ -3,6 +3,18 @@ document.getElementById("blogButton").onclick = function () {
     location.href = "4QuestionAnswer.html";
 };
 
+
+
+
+// function display_alert()
+//  {
+//  alert("Type The Values");
+//  }
+
+
+
+
+
 // get the value and parsefloat
 function getInputValueByID(inputId)
 {
@@ -12,6 +24,8 @@ function getInputValueByID(inputId)
     inputField.value='';
     return inputFieldValue;
 }
+
+
 
 // set the value and show 
 function SetTextElementValueById(elementId, newValue){
@@ -32,8 +46,20 @@ document.getElementById('Triangle_Calculate_Button').addEventListener
     const TriangleArea= hightValue*baseValue;
     SetTextElementValueById('Calculate_Values1',TriangleArea);
 
+   
+       if(isNaN(baseValue)||isNaN(hightValue))
+       {
+             alert("Please Give Valid Input");
+             return;
+       }
 }
 )
+
+
+
+
+
+
 
 //Rectangle_Calculate_Button
 
@@ -45,6 +71,12 @@ document.getElementById('Rectangle_Calculate_Button').addEventListener
     const LValue = getInputValueByID('lvalue');
     const Rectangle= WValue*LValue;
     SetTextElementValueById('Calculate_Values4',Rectangle);
+
+    if(isNaN(WValue)||isNaN(LValue))
+    {
+          alert("Please Give Valid Input");
+          return;
+    }
 
 }
 )
@@ -113,10 +145,26 @@ SetTextElementValueById('Calculate_Values2',EllipseCalculateValue);
 )
 
 
-// function display_alert()
-//  {
-//  alert("Type The Values");
-//  }
+// set Random color Bg
+function generateRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function setRandomColor(ids) {
+    ids.forEach(function(id) {
+      var element = document.getElementById(id);
+      element.addEventListener("mouseover", function() {
+        var randomColor = generateRandomColor();
+        element.style.backgroundColor = randomColor;
+      });
+    });
+  }
+  setRandomColor(["c1", "c2", "c3","c4", "c5", "c6"]);
 
 
 
