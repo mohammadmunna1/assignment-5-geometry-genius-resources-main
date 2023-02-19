@@ -150,41 +150,41 @@ function setRandomColor(ids) {
   setRandomColor(["c1", "c2", "c3","c4", "c5", "c6"]);
 
 
-// Area Calculation
+// // Area Calculation
 
-const AreaCalculationField = [];
+// const AreaCalculationField = [];
 
-function displayCalculation(CalculationResult)
-{
-    const CalculationList = document.getElementById('AreaCalculationlist');
-    CalculationList.innerText="";
+// function displayCalculation(CalculationResult)
+// {
+//     const CalculationList = document.getElementById('AreaCalculationlist');
+//     CalculationList.innerText="";
 
-    for(let i=0 ; i<CalculationResult.length ; i++)
-    {
-        //creating a list item of player
-        const li = document.createElement("li");
-        li.innerHTML = 
-         `
-        <li> ${i+1} : ${CalculationResult[i]} </li>
-        `;
-        CalculationList.appendChild(li);
-    }
-}
+//     for(let i=0 ; i<CalculationResult.length ; i++)
+//     {
+//         //creating a list item of player
+//         const li = document.createElement("li");
+//         li.innerHTML = 
+//          `
+//         <li> ${i+1} : ${CalculationResult[i]} </li>
+//         `;
+//         CalculationList.appendChild(li);
+//     }
+// }
 
-function getResult(element)
-{   
-    const Results = element.parentNode.children[1].innerText;
+// function getResult(element)
+// {   
+//     const Results = element.parentNode.children[1].innerText;
 
-    if(AreaCalculationField.length < 6)
-    {
-         AreaCalculationField.push(Results);
-         element.style.backgroundColor = 'gray';
-    }
-    else{
-        alert("Please Click Only 6")
-    }
-    //displaying selected calculation
-    getResult(AreaCalculationField);
-}
+//     if(AreaCalculationField.length < 6)
+//     {
+//          AreaCalculationField.push(Results);
+//          element.style.backgroundColor = 'gray';
+//     }
+//     else{
+//         alert("Please Click Only 6")
+//     }
+//     //displaying selected calculation
+//     getResult(AreaCalculationField);
+// }
 
 
