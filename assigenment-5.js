@@ -5,16 +5,6 @@ document.getElementById("blogButton").onclick = function () {
 
 
 
-
-// function display_alert()
-//  {
-//  alert("Type The Values");
-//  }
-
-
-
-
-
 // get the value and parsefloat
 function getInputValueByID(inputId)
 {
@@ -54,13 +44,6 @@ document.getElementById('Triangle_Calculate_Button').addEventListener
        }
 }
 )
-
-
-
-
-
-
-
 //Rectangle_Calculate_Button
 
 document.getElementById('Rectangle_Calculate_Button').addEventListener
@@ -166,5 +149,42 @@ function setRandomColor(ids) {
   }
   setRandomColor(["c1", "c2", "c3","c4", "c5", "c6"]);
 
+
+// Area Calculation
+
+const AreaCalculationField = [];
+
+function displayCalculation(CalculationResult)
+{
+    const CalculationList = document.getElementById('AreaCalculationlist');
+    CalculationList.innerText="";
+
+    for(let i=0 ; i<CalculationResult.length ; i++)
+    {
+        //creating a list item of player
+        const li = document.createElement("li");
+        li.innerHTML = 
+         `
+        <li> ${i+1} : ${CalculationResult[i]} </li>
+        `;
+        CalculationList.appendChild(li);
+    }
+}
+
+function getResult(element)
+{   
+    const Results = element.parentNode.children[1].innerText;
+
+    if(AreaCalculationField.length < 6)
+    {
+         AreaCalculationField.push(Results);
+         element.style.backgroundColor = 'gray';
+    }
+    else{
+        alert("Please Click Only 6")
+    }
+    //displaying selected calculation
+    getResult(AreaCalculationField);
+}
 
 
